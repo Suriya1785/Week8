@@ -1,0 +1,559 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\JSBootcamp\Week8> cd demo
+PS C:\JSBootcamp\Week8\demo> node app.js
+internal/modules/cjs/loader.js:638
+    throw err;
+    ^
+
+Error: Cannot find module './data/data.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\JSBootcamp\Week8\demo\app.js:10:12)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+PS C:\JSBootcamp\Week8\demo> node app.js
+internal/modules/cjs/loader.js:798
+    throw err;
+    ^
+
+SyntaxError: C:\JSBootcamp\Week8\demo\data\data.json: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (internal/modules/cjs/loader.js:795:27)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\JSBootcamp\Week8\demo\app.js:10:12)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+PS C:\JSBootcamp\Week8\demo> node app.js
+internal/modules/cjs/loader.js:798
+    throw err;
+    ^
+
+SyntaxError: C:\JSBootcamp\Week8\demo\data\data.json: Unexpected token ; in JSON at position 2
+    at JSON.parse (<anonymous>)
+    at Object.Module._extensions..json (internal/modules/cjs/loader.js:795:27)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at Object.<anonymous> (C:\JSBootcamp\Week8\demo\app.js:10:12)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+PS C:\JSBootcamp\Week8\demo> app.js
+app.js : The term 'app.js' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ app.js
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (app.js:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: The command app.js was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\app.js". See "get-help about_Command_Precedence" for more details.
+PS C:\JSBootcamp\Week8\demo> node app.js
+{ uid: -1,
+  gid: -1,
+  username: 'Training',
+  homedir: 'C:\\Users\\Training',
+  shell: null }
+C:\JSBootcamp\Week8\demo\app.js:24
+mountains.forEach((mountain, index) => {
+          ^
+
+TypeError: Cannot read property 'forEach' of undefined
+    at Object.<anonymous> (C:\JSBootcamp\Week8\demo\app.js:24:11)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+PS C:\JSBootcamp\Week8\demo> node app.js
+{ uid: -1,
+  gid: -1,
+  username: 'Training',
+  homedir: 'C:\\Users\\Training',
+  shell: null }
+(node:5968) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> type log.txt
+
+info [Mon Sep 09 2019 15:15:03 GMT-0400 (Eastern Daylight Time)]  App accessed by: Training!
+
+PS C:\JSBootcamp\Week8\demo> type mountains.txt
+1: Mt. Washington, 6,288'
+2: Mt. Adams, 5,799'
+3: Mt. Jefferson, 5,716'
+4: Mt. Monroe, 5,372'
+5: Mt. Madison, 5,366'
+6: Mt. Lafayette, 5,260'
+7: Mt. Lincoln, 5,089'
+8: South Twin, 4,902'
+9: Carter Dome, 4,832'
+10: Mt. Moosilauke, 4,802'
+11: Mt. Eisenhower, 4,760'
+12: North Twin, 4,761'
+13: Mt. Carrigain, 4,700'
+14: Mt. Bond, 4,698'
+15: Middle Carter, 4,610'
+16: West Bond, 4,540'
+17: Mt. Garfield, 4,500'
+18: Mt. Liberty, 4,459'
+19: South Carter, 4,430'
+20: Wildcat Mountain, 4,422'
+21: Mt. Hancock, 4,420'
+22: South Kinsman, 4,358'
+23: Mt. Field, 4,340'
+24: Mt. Osceola, 4,340'
+25: Mt. Flume, 4,328'
+26: South Hancock, 4,319'
+27: Mt. Pierce, 4,312'
+28: North Kinsman, 4,293'
+29: Mt. Willey, 4,285'
+30: Bondcliff, 4,265'
+31: Zealand Mountain, 4,260'
+32: North Tripyramid, 4,180'
+33: Mt. Cabot, 4,170'
+34: East Osceola, 4,156'
+35: Middle Tripyramid, 4,140'
+36: Cannon Mountain, 4,100'
+37: Wildcat D, 4,062'
+38: Mt. Hale, 4,054'
+39: Mt. Jackson, 4,052'
+40: Mt. Tom, 4,051'
+41: Mt. Moriah, 4,049'
+42: Mt. Passaconaway, 4,043'
+43: Owl's Head, 4,025'
+44: Galehead Mountain, 4,024'
+45: Mt. Whiteface, 4,020'
+46: Mt. Waumbek, 4,006'
+47: Mt. Isolation, 4,003'
+48: Mt. Tecumseh, 4,003'
+PS C:\JSBootcamp\Week8\demo> node
+> var mountains = [];
+undefined
+> console.log(mountains);
+[]
+undefined
+> var mountain ={"name": "Mt.Washington", "elevation": "6,288"};
+undefined
+> console.log(mountain);
+{ name: 'Mt.Washington', elevation: '6,288' }
+undefined
+> .exit
+PS C:\JSBootcamp\Week8\demo> node
+> var mountain={"name": "Mt. Washington", "elevation": 6288};
+undefined
+> console.log(mountain);
+{ name: 'Mt. Washington', elevation: 6288 }
+undefined
+> console.log(JSON.stringify(mountain));
+{"name":"Mt. Washington","elevation":6288}
+undefined
+> var elevation = mountain.elevation;
+undefined
+> console.log(elevation);
+6288
+undefined
+> elevation=elevation.tostring().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+Thrown:
+TypeError: elevation.tostring is not a function
+> elevation=elevation.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+'6,288'
+> console.log(`${mountain.name}, ${mountian.elevation}`);
+Thrown:
+ReferenceError: mountian is not defined
+> console.log(`${mountain.name}, ${mountain.elevation}`);
+Mt. Washington, 6288
+undefined
+> .exit
+PS C:\JSBootcamp\Week8\demo> node
+> var mountain =[];
+undefined
+> mountains;
+Thrown:
+ReferenceError: mountains is not defined
+> var mountains = [];
+undefined
+> mountains;
+[]
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+var mountain = {
+"name": "Mt. Washington",
+"elevation": "6.288"
+};
+^D
+mountain;
+mountains.push(mountain);
+1
+
+Thrown:
+^D
+^
+
+SyntaxError: Unexpected token ^
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+var mountain = {
+"name": "Mt. Washington",
+"elevation": "6.288"
+};
+
+undefined
+> mountain;
+{ name: 'Mt. Washington', elevation: '6.288' }
+> mountains.push(mountain);
+1
+> mountains;
+[ { name: 'Mt. Washington', elevation: '6.288' } ]
+> .exit
+PS C:\JSBootcamp\Week8\demo> node
+> var mountains = [];
+undefined
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+function Mountain(name, elevation, desc) {
+        this.name = name;
+        this.elevation = elevation;
+        this.desc = desc;
+
+        this.getMountain = function() {
+            return `${this.name}: ${this.elevation}' - ${this.desc}`;
+        };
+    }
+
+undefined
+> mountains.push(new Mountain("Mt. Washington", "6,288", "Highest peak east of the Mississippi River and north of the Carolinas."));
+1
+> mountains.push(new Mountain("Mt. Adams", "5,799", "Second highest peak in New England."));
+2
+> mountains;
+[ Mountain {
+    name: 'Mt. Washington',
+    elevation: '6,288',
+    desc:
+     'Highest peak east of the Mississippi River and north of the Carolinas.',
+    getMountain: [Function] },
+  Mountain {
+    name: 'Mt. Adams',
+    elevation: '5,799',
+    desc: 'Second highest peak in New England.',
+    getMountain: [Function] } ]
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+mountains.forEach((val,index)=> {
+console.log(index + ":" + val.getMountain());
+});
+
+0:Mt. Washington: 6,288' - Highest peak east of the Mississippi River and north of the Carolinas.
+1:Mt. Adams: 5,799' - Second highest peak in New England.
+undefined
+> .exit
+PS C:\JSBootcamp\Week8\demo> node
+> var data=require("./data.json");
+Thrown:
+{ Error: Cannot find module './data.json'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:562:25)
+    at Module.require (internal/modules/cjs/loader.js:690:17)
+    at require (internal/modules/cjs/helpers.js:25:18) code: 'MODULE_NOT_FOUND' }
+> var data=require("./data/data.json");
+undefined
+> var mountains = data.mountains;
+undefined
+> console.log(data.mountains.length);
+48
+undefined
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+Number.prototype.format = function (){
+return this.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+};
+
+[Function]
+> .editor
+// Entering editor mode (^D to finish, ^C to cancel)
+mountains.forEach((mountain, index) => {
+    console.log(`${index}: ${mountain.name}, ${mountain.elevation.format()}'`);
+    });
+0: Mt. Washington, 6,288'
+1: Mt. Adams, 5,799'
+2: Mt. Jefferson, 5,716'
+3: Mt. Monroe, 5,372'
+4: Mt. Madison, 5,366'
+5: Mt. Lafayette, 5,260'
+6: Mt. Lincoln, 5,089'
+7: South Twin, 4,902'
+8: Carter Dome, 4,832'
+9: Mt. Moosilauke, 4,802'
+10: Mt. Eisenhower, 4,760'
+11: North Twin, 4,761'
+12: Mt. Carrigain, 4,700'
+13: Mt. Bond, 4,698'
+14: Middle Carter, 4,610'
+15: West Bond, 4,540'
+16: Mt. Garfield, 4,500'
+17: Mt. Liberty, 4,459'
+18: South Carter, 4,430'
+19: Wildcat Mountain, 4,422'
+20: Mt. Hancock, 4,420'
+21: South Kinsman, 4,358'
+22: Mt. Field, 4,340'
+23: Mt. Osceola, 4,340'
+24: Mt. Flume, 4,328'
+25: South Hancock, 4,319'
+26: Mt. Pierce, 4,312'
+27: North Kinsman, 4,293'
+28: Mt. Willey, 4,285'
+29: Bondcliff, 4,265'
+30: Zealand Mountain, 4,260'
+31: North Tripyramid, 4,180'
+32: Mt. Cabot, 4,170'
+33: East Osceola, 4,156'
+34: Middle Tripyramid, 4,140'
+35: Cannon Mountain, 4,100'
+36: Wildcat D, 4,062'
+37: Mt. Hale, 4,054'
+38: Mt. Jackson, 4,052'
+39: Mt. Tom, 4,051'
+40: Mt. Moriah, 4,049'
+41: Mt. Passaconaway, 4,043'
+42: Owl's Head, 4,025'
+43: Galehead Mountain, 4,024'
+44: Mt. Whiteface, 4,020'
+45: Mt. Waumbek, 4,006'
+46: Mt. Isolation, 4,003'
+47: Mt. Tecumseh, 4,003'
+undefined
+> .exit
+PS C:\JSBootcamp\Week8\demo> node
+> app.js
+Thrown:
+ReferenceError: app is not defined
+> .exit
+PS C:\JSBootcamp\Week8\demo> node demoApp.js
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\demoApp.js' ]
+PS C:\JSBootcamp\Week8\demo> node app.js insert
+{ uid: -1,
+  gid: -1,
+  username: 'Training',
+  homedir: 'C:\\Users\\Training',
+  shell: null }
+(node:10692) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> ^C
+PS C:\JSBootcamp\Week8\demo> node demoApp.js insert
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\demoApp.js',
+  'insert' ]
+PS C:\JSBootcamp\Week8\demo> node demoApp.js insert --name="Mt. Washington"
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\demoApp.js',
+  'insert',
+  '--name=Mt. Washington' ]
+PS C:\JSBootcamp\Week8\demo> node demoApp.js insert --name="Mt. Washington"
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\demoApp.js',
+  'insert',
+  '--name=Mt. Washington' ]
+command: insert
+Name: --name=Mt. Washington
+PS C:\JSBootcamp\Week8\demo> npm install yargs --save
+npm WARN demo@1.0.0 No description
+npm WARN demo@1.0.0 No repository field.
+
++ yargs@14.0.0
+added 26 packages from 9 contributors and audited 42 packages in 3.734s
+found 0 vulnerabilities
+
+PS C:\JSBootcamp\Week8\demo> node app_yargs.js insert --name="Mt. Washington"
+Staring App...
+{ _: [ 'insert' ], name: 'Mt. Washington', '$0': 'app_yargs.js' }
+command: insert
+Name: Mt. Washington
+PS C:\JSBootcamp\Week8\demo>
+PS C:\JSBootcamp\Week8\demo> $ node app.js --name="Mt. Washington" --elev="6,288"
+$ : The term '$' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ $ node app.js --name="Mt. Washington" --elev="6,288"
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\JSBootcamp\Week8\demo> node app.js --name="Mt. Washington" --elev="6,288"
+(node:17796) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> $ node app.js insert  --elev="6,288"
+$ : The term '$' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ $ node app.js insert  --elev="6,288"
++ ~
+    + CategoryInfo          : ObjectNotFound: ($:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+PS C:\JSBootcamp\Week8\demo> node app.js insert  --elev="6,288"
+(node:7964) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app.js insert  --elev="6,288"
+{ _: [ 'insert' ], elev: '6,288', '$0': 'app.js' }
+(node:17744) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app.js delete --name="Mt. Washington" --elev="6,288"
+{ _: [ 'delete' ],
+  name: 'Mt. Washington',
+  elev: '6,288',
+  '$0': 'app.js' }
+(node:19632) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app.js insert --name="Mt. Washington" --elev="6,288"
+{ _: [ 'insert' ],
+  name: 'Mt. Washington',
+  elev: '6,288',
+  '$0': 'app.js' }
+Mountain Created: Mt. Washington 6,288!
+(node:15336) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app.js insert --name="Mt. Washington" --elev="6,288"
+{ _: [ 'insert' ],
+  name: 'Mt. Washington',
+  elev: '6,288',
+  '$0': 'app.js' }
+Mountain not created: Duplicate mountain (Mt. Washington) found!
+(node:19748) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> type mountains.json
+[{"name":"Mt. Washington","elev":"6,288"}]
+PS C:\JSBootcamp\Week8\demo> type log.txt
+
+info [Mon Sep 09 2019 15:15:03 GMT-0400 (Eastern Daylight Time)]  App accessed by: Training!
+
+
+info [Mon Sep 09 2019 15:45:20 GMT-0400 (Eastern Daylight Time)]  App accessed by: Training!
+
+
+info [Mon Sep 09 2019 15:59:04 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Failure - Command not found.
+
+info [Mon Sep 09 2019 15:59:47 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Failure - Missing Mountain Data param(s).
+info [Mon Sep 09 2019 16:01:02 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Failure - Missing Mountain Data param(s).
+info [Mon Sep 09 2019 16:01:36 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Failure - Command (delete) not able to be processed.
+
+info [Mon Sep 09 2019 16:04:46 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Success - Mt. Washington, 6,288.
+
+info [Mon Sep 09 2019 16:07:07 GMT-0400 (Eastern Daylight Time)]  App accessed by Training: Failure - Mountain not created: Duplicate mountain (Mt. Washington) found.
+PS C:\JSBootcamp\Week8\demo> node app.js insert --name="Mt. Adams" --elev="5,799"
+{ _: [ 'insert' ],
+  name: 'Mt. Adams',
+  elev: '5,799',
+  '$0': 'app.js' }
+Mountain Created: Mt. Adams 5,799!
+(node:16296) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> type mountains.json
+[{"name":"Mt. Washington","elev":"6,288"},{"name":"Mt. Adams","elev":"5,799"}]
+PS C:\JSBootcamp\Week8\demo>
+PS C:\JSBootcamp\Week8\demo> node app_yargs.js insert --name="Mt. Adams" --elev="5,799"
+Staring App...
+{ _: [ 'insert' ],
+  name: 'Mt. Adams',
+  elev: '5,799',
+  '$0': 'app_yargs.js' }
+command: insert
+Name: Mt. Adams
+PS C:\JSBootcamp\Week8\demo> node app_yargs.js --name="Mt. Adams" --elev="5,799"
+Staring App...
+{ _: [], name: 'Mt. Adams', elev: '5,799', '$0': 'app_yargs.js' }
+command: --name=Mt. Adams
+Name: Mt. Adams
+PS C:\JSBootcamp\Week8\demo> node app_yargs.js --name="Mt. Adams" --elev="5,799"
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\app_yargs.js',
+  '--name=Mt. Adams',
+  '--elev=5,799' ]
+{ _: [], name: 'Mt. Adams', elev: '5,799', '$0': 'app_yargs.js' }
+command: --name=Mt. Adams
+Name: Mt. Adams
+PS C:\JSBootcamp\Week8\demo> node app_yargs.js insert --name="Mt. Adams" --elev="5,799"
+Staring App...
+[ 'C:\\Program Files\\nodejs\\node.exe',
+  'C:\\JSBootcamp\\Week8\\demo\\app_yargs.js',
+  'insert',
+  '--name=Mt. Adams',
+  '--elev=5,799' ]
+{ _: [ 'insert' ],
+  name: 'Mt. Adams',
+  elev: '5,799',
+  '$0': 'app_yargs.js' }
+command: insert
+Name: Mt. Adams
+PS C:\JSBootcamp\Week8\demo> node app.js create --name="Mt. Washington" --elev="6,288"
+{ _: [ 'create' ],
+  name: 'Mt. Washington',
+  elev: '6,288',
+  '$0': 'app.js' }
+(node:17744) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app.js create --name="Mt. Washington" --elev="6,288"
+{ _: [ 'create' ],
+  name: 'Mt. Washington',
+  elev: '6,288',
+  '$0': 'app.js' }
+(node:16272) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js create --name="Mt. Washington" --elev="6,288"
+C:\JSBootcamp\Week8\demo\app_crud.js:33
+            var mountain = mountains.insertMountain(mountainName, mountainElevation);
+                                     ^
+
+TypeError: mountains.insertMountain is not a function
+    at Object.<anonymous> (C:\JSBootcamp\Week8\demo\app_crud.js:33:38)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+PS C:\JSBootcamp\Week8\demo> node app_crud.js create --name="Mt. Washington" --elev="6,288"
+Mountain not created: Duplicate mountain (Mt. Washington) found!
+PS C:\JSBootcamp\Week8\demo> node app_crud.js create --name="Mt. Washington" --elev="6,288"
+Mountain not created: Duplicate mountain (Mt. Washington) found!
+PS C:\JSBootcamp\Week8\demo> node app_crud.js create --name="Mt. Washington" --elev="6,288"
+Mountain Created: Mt. Washington 6,288.
+PS C:\JSBootcamp\Week8\demo> node app.js read   --name="Mt. Washington"
+{ _: [ 'read' ], name: 'Mt. Washington', '$0': 'app.js' }
+(node:10904) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js read   --name="Mt. Washington"
+Mountain: Mt. Washington 6,288.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js create --name="Mt. Adams" --elev="0,000"
+Mountain Created: Mt. Adams 0,000.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js list
+Mountains:
+Mt. Washington, 6,288'.
+Mt. Adams, 0,000'.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js update --name="MT. Adams" --elev="5,799"
+Mountain (MT. Adams) not found!
+PS C:\JSBootcamp\Week8\demo> node app_crud.js update --name="Mt. Adams" --elev="5,799"
+Mountain Updated: Mt. Adams 5,799.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js read   --name="Mt. Adams"
+Mountain: Mt. Adams 5,799.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js delete --name="Mt. Adams"
+Mountain (Mt. Adams) deleted.
+PS C:\JSBootcamp\Week8\demo> node app.js list
+{ _: [ 'list' ], '$0': 'app.js' }
+(node:2884) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+PS C:\JSBootcamp\Week8\demo> node app_crud.js list
+Mountains:
+Mt. Washington, 6,288'.
+PS C:\JSBootcamp\Week8\demo>
